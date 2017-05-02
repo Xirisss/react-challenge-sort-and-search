@@ -95,13 +95,13 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <div>
+        <div className="searchButton">
           <SearchBar findUsers={(value) => this.findUser(value)} />
           <ToolBar
             sortAge={() => this.sortAge()}
             sortName={() => this.sortName()} 
           />
-          <h1>{this.state.newUsers.length}</h1>
+          <h1>Total: {this.state.newUsers.length}</h1>
         </div>
         <div>
           {this.state.newUsers.length > 0 ? (

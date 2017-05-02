@@ -7,10 +7,10 @@ const ActiveUser = ({ user }) => {
     return(<h1>No Users</h1>)
   }
   return (
-    <div className="col-sm-4 col-md-3 col-lg-2">
-      <img className="rc-img" src={`./images/${user.image}.svg`} />
+    <div className="col-sm-4 col-md-3 col-lg-2 userlist">
+      <img className="active-img" src={`./images/${user.image}.svg`} />
       <h1>{user.name}</h1>
-      <Table striped bordered condensed>
+      <Table striped condensed>
         <tbody>
           <tr>
             <td>User age:</td>
