@@ -105,7 +105,7 @@ export default class App extends Component {
         </div>
         <div>
           {this.state.newUsers.length > 0 ? (
-            <div>
+            <div className="activeAndList">
               <ActiveUser user={this.state.selectedUser} />
               <UserList
                 users={this.state.newUsers}

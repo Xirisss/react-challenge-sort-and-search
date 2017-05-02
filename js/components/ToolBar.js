@@ -5,8 +5,8 @@ import { Button } from 'react-bootstrap';
 const ToolBar = ({ sortName, sortAge }) => {
   return (
     <div>
-      <Button bsStyle="primary" onClick={() => sortName()}>Sort by Name</Button>
-      <Button bsStyle="primary" onClick={() => sortAge()}>sort by Age</Button>
+      <Button className="sortBtn" bsStyle="primary" onClick={() => sortName()}>Sort by Name</Button>
+      <Button className="sortBtn" bsStyle="primary" onClick={() => sortAge()}>sort by Age</Button>
     </div>
   )
 }
